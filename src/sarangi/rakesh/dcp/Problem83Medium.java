@@ -2,7 +2,6 @@ package sarangi.rakesh.dcp;
 
 public class Problem83Medium {
 
-
     public static void main(String[] args) {
         Node root = prepareTestData();
         printPreOrder(root);
