@@ -35,7 +35,7 @@ public class LRUCache {
     public int get(int key) {
         Node node = map.get(key);
         if (node != null) {
-            list.remove(node);
+            list.remove(node); // This is not O(1). Use own implementation of linked list
             list.addFirst(node);
             return node.value;
         }
